@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Morrissey Trivia Game</title>
+
+		<link href='style.css' rel='stylesheet' type='text/css'>
+		<script src="jquery.min.js"></script>
+		<script src="stellar.js"></script>
+		<script src="waypoints.min.js"></script>
+		<script src="jquery-easing.js"></script>
+
+	</head>
+	<body>
+
+		<div class="fw-container slide-odd slide" id="slide-1" data-slide="1">
+			<div class="container">
+		        <div class="inner-container">
+		        	<div class="small">How well do you know</div>
+		        	<div class="large">Morrissey?</div>
+		        </div>
+		    </div>
+		</div>
+
+		<div class="fw-container slide-even slide" id="slide-2" data-slide="2">
+				<div class="container">
+					<div class="inner-container">
+						<div class="headline">Question One</div>
+			          	<div class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+				    </div>
+			    </div>
+		</div>
+
+		<div class="fw-container slide-odd slide" data-stellar-background-ratio="0.45" id="slide-3" data-slide="3">
+			<div class="container">
+				<div class="inner-container"></div>
+		  </div>
+		</div>
+
+		<div class="fw-container slide-even slide " id="slide-4" data-slide="4">
+			<div class="container">
+				<div class="inner-container">
+					<div class="headline">Question Two</div>
+	        <div class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="fw-container slide-odd slide" data-stellar-background-ratio="0.5" id="slide-5" data-slide="5">
+				<div class="container">
+					<div class="inner-container"></div>
+        </div>
+		</div>
+
+		<script>
+			$(function(){
+				$.stellar({
+					horizontalScrolling: false,
+					verticalOffset: 0
+				});
+			});
+
+			jQuery(document).ready(function ($) {
+
+		    $(window).stellar();
+
+		    var links = $('.navigation').find('li');
+		    slide = $('.slide');
+		    mywindow = $(window);
+		    htmlbody = $('html,body');
+
+		    slide.waypoint(function (event, direction) {
+		        dataslide = $(this).attr('data-slide');
+
+		        if (direction === 'down') {
+		            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+		        }
+		        else {
+		            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
+		        }
+
+		    });
+
+		    mywindow.scroll(function () {
+		        if (mywindow.scrollTop() == 0) {
+		            $('.navigation li[data-slide="1"]').addClass('active');
+		            $('.navigation li[data-slide="2"]').removeClass('active');
+		        }
+		    });
+
+		    function goToByScroll(dataslide) {
+		        htmlbody.animate({
+		            scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
+		        }, 2000, 'easeInOutQuint');
+		    }
+
+		    links.click(function (e) {
+		        e.preventDefault();
+		        dataslide = $(this).attr('data-slide');
+		        goToByScroll(dataslide);
+		    });
+		});
+		</script>
+	</body>
+</html>
