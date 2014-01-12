@@ -95,6 +95,7 @@ a {
 }
 
 #slide-5 {
-  background: url(images/cityscape.jpg);
+  background: url(images/cityscape_reflect.jpg);
+  background-size: cover;
   height: 845px;
 }
