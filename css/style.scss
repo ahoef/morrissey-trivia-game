@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: helvetica, arial;
+  font-family: 'Anaheim', sans-serif;
+}
+
+a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.fw-container {
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  min-width: 920px;
+  position: relative;
+  background-size: cover;
+  .container {
+    position: relative;
+    text-align: center;
+    padding: 1% 0;
+    margin: 0 auto;
+    .inner-container {
+      width: 500px;
+      margin: 0 auto;
+      padding: 75px 40px;
+      .question {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+      .answers {
+        font-size: 25px;
+        line-height: 1.5em;
+        li {
+          display: inline-block;
+          margin-right: 40px;
+          &:last-child {
+            margin-right: 0px;
+          }
+          input {
+            margin-right: 10px;
+          }
+        }
+      }
+      .explanation {
+        .large-quote {
+          font-size: 60px;
+          font-family: Georgia;
+        }
+      }
+    }
+  }
+}
+
+.slide-odd {
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.slide-even {
+  z-index: 2;
+  background-color: #444;
+  color: #fff;
+}
+
+#slide-1 {
+  background-image: url(../images/looking-up.jpg);
+  height: 900px;
+  .inner-container {
+    margin-top: 10%;
+    margin-right: 10%;
+    color: #fff;
+  }
+  .headline {
+    .small-text {
+      font-size: 30px;
+    }
+    .large-text {
+      font-size: 50px;
+    }
+  }
+}
+
+#slide-2 .inner-container,
+ #slide-4 .inner-container {
+  color: #fff;
+  width: 900px;
+}
+
+#slide-2 .inner-container .caption,
+  #slide-4 .inner-container .caption {
+  padding: 5px 164px;
+}
+
+#slide-3 {
+  background-image: url(../images/smiths.jpg);
+  height: 700px;
+}
+
+#slide-5 {
+  background: url(../images/cityscape_reflect.jpg);
+  background-size: cover;
+  height: 845px;
+}
+
+.footer {
+  background-color: black;
+  height: 200px;
+}
