@@ -84,6 +84,14 @@ a {
   background-size: cover;
   height: 845px; }
 
+#slide-6 .inner-container {
+  width: 100%; }
+
+#slide-7 {
+  background: url(../images/group.jpg);
+  background-size: cover;
+  height: 800px; }
+
 footer {
   background-color: black;
   padding: 40px;
