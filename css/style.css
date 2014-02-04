@@ -84,6 +84,14 @@ a {
   background-size: cover;
   height: 845px; }
 
-.footer {
+footer {
   background-color: black;
-  height: 200px; }
+  padding: 40px;
+  text-align: center;
+  color: white; }
+  footer .about-link {
+    margin-bottom: 20px; }
+  footer .about {
+    display: none;
+    max-width: 900px;
+    margin: 0 auto; }
