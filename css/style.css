@@ -30,7 +30,7 @@ a {
       padding: 75px 40px; }
       .fw-container .container .inner-container .question {
         font-size: 30px;
-        margin-bottom: 30px; }
+        margin-bottom: 50px; }
       .fw-container .container .inner-container .answers {
         font-size: 25px;
         line-height: 1.5em; }
@@ -77,20 +77,34 @@ a {
 
 #slide-3 {
   background-image: url(../images/smiths.jpg);
-  height: 700px; }
+  height: 900px; }
 
 #slide-5 {
-  background: url(../images/cityscape_reflect.jpg);
+  background: url(../images/group.jpg) center center;
   background-size: cover;
-  height: 845px; }
-
-#slide-6 .inner-container {
-  width: 100%; }
+  height: 900px;
+  background-attachment: fixed; }
 
 #slide-7 {
-  background: url(../images/group.jpg);
+  background: url(../images/tyewriter.jpg) center center;
   background-size: cover;
-  height: 800px; }
+  height: 800px;
+  background-attachment: fixed; }
+
+#slide-8 .inner-container {
+  width: 100%; }
+
+#slide-9 {
+  background: url(../images/cityscape_reflect.jpg);
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed; }
+
+#slide-11 {
+  background: url(../images/Morrissey-now.jpg);
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed; }
 
 footer {
   background-color: black;

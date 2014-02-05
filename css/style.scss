@@ -33,7 +33,7 @@ a {
       padding: 75px 40px;
       .question {
         font-size: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
       }
       .answers {
         font-size: 25px;
@@ -101,25 +101,42 @@ a {
 
 #slide-3 {
   background-image: url(../images/smiths.jpg);
-  height: 700px;
+  height: 900px;
 }
 
 #slide-5 {
-  background: url(../images/cityscape_reflect.jpg);
+  background: url(../images/group.jpg) center center;
   background-size: cover;
-  height: 845px;
+  height: 900px;
+  background-attachment: fixed;
 }
 
-#slide-6 {
+
+#slide-7 {
+  background: url(../images/tyewriter.jpg) center center;
+  background-size: cover;
+  height: 800px;
+  background-attachment: fixed;
+}
+
+#slide-8 {
   .inner-container {
     width: 100%;
   }
 }
 
-#slide-7 {
-  background: url(../images/group.jpg);
+#slide-9 {
+  background: url(../images/cityscape_reflect.jpg);
   background-size: cover;
-  height: 800px;
+  height: 900px;
+  background-attachment: fixed;
+}
+
+#slide-11 {
+  background: url(../images/Morrissey-now.jpg);
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed;
 }
 
 footer {
